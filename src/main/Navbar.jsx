@@ -52,9 +52,15 @@ const Navbar = () => {
           toggle ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <Link to="menu">Menu</Link>
-        <Link to="reward">Rewards</Link>
-        <Link to="giftcard">Gift Cards</Link>
+        <Link onClick={() => setToggle(false)} to="menu">
+          Menu
+        </Link>
+        <Link onClick={() => setToggle(false)} to="reward">
+          Rewards
+        </Link>
+        <Link onClick={() => setToggle(false)} to="giftcard">
+          Gift Cards
+        </Link>
         <span className="w-full border-[1px] border-gray-400"></span>
         <div className="flex gap-3 text-[16px]">
           <button className="border-1 rounded-full py-1 px-3 font-semibold">

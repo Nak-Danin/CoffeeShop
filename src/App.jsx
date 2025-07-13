@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RootLayout, MenuLayout } from "./layouts";
-import { Home, Menu } from "./pages";
+import { Home, Menu, Feature, Category } from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +19,15 @@ const router = createBrowserRouter([
             index: true,
             element: <Menu />,
           },
+          {
+            path: ':category/:type',
+            element: <Category/>
+          }
         ],
+      },
+      {
+        path: "feature",
+        element: <Feature />,
       },
     ],
   },

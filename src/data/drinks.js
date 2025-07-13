@@ -49,6 +49,70 @@ export const banners = [
   },
 ];
 
+import f1 from "../assets/images/Feature/feature1.jpg";
+import f2 from "../assets/images/Feature/feature2.webp";
+import f3 from "../assets/images/Feature/feature3.jpg";
+import f4 from "../assets/images/Feature/feature4.jpg";
+import f5 from "../assets/images/Feature/feature5.jpg";
+
+export const features = [
+  {
+    id: 1,
+    title: "New Strato™ Frappuccino® Blended Beverages",
+    imgsrc: f1,
+    reverse: false,
+    description:
+      "The first-ever Frappuccino® Beverages with rich, flavorful cold foam layered atop a beautifully blended classic, in Brown Sugar, Salted Caramel Mocha and Strawberry Matcha. Here for a limited time.",
+    btn: "Order now",
+    bg: "bg-[#D1D1AA]",
+    textColor: "text-[#32462F]",
+  },
+  {
+    id: 2,
+    title: "Iced Horchata Oatmilk Shaken Espresso",
+    imgsrc: f2,
+    reverse: true,
+    description:
+      "Boldly refreshing with Starbucks® Blonde Espresso, cinnamon, vanilla and rice-flavored horchata syrup, and a splash of creamy oatmilk.",
+    btn: "Order now",
+    bg: "bg-[#D1D1AA]",
+    textColor: "text-[#32462F]",
+  },
+  {
+    id: 3,
+    title: "Salted Caramel Cream Cold Brew and Vanilla Sweet Cream Cold Brew",
+    imgsrc: f3,
+    reverse: false,
+    description:
+      "Our signature cold brew with vanilla syrup and topped with either Salted Caramel Cream Cold Foam or Vanilla Sweet Cream.",
+    btn: "Order now",
+    bg: "bg-[#D1D1AA]",
+    textColor: "text-[#32462F]",
+  },
+  {
+    id: 4,
+    title: "Cool Summer-Berry Refreshers",
+    imgsrc: f4,
+    reverse: true,
+    description:
+      "Nigerian-American artist Shadé Akanbi blends tradition and modernity to create rich prints and patterns. For a limited time.",
+    btn: "Order now",
+    bg: "bg-[#32462F]",
+    textColor: "text-white",
+  },
+  {
+    id: 5,
+    title: "Crispy Grilled Cheese on Sourdough",
+    imgsrc: f5,
+    reverse: false,
+    description:
+      "Filled with melty white Cheddar and mozzarella goodness for savory satisfaction and 21 grams of protein.",
+    btn: "Order now",
+    bg: "bg-[#32462F]",
+    textColor: "text-white",
+  },
+];
+
 import drink1 from "../assets/images/Menu/drink1.png";
 import drink2 from "../assets/images/Menu/drink2.jpg";
 import drink3 from "../assets/images/Menu/drink3.jpg";
@@ -75,41 +139,49 @@ export const menu = [
       {
         id: 1,
         imgsrc: drink1,
+        category: "drinks",
         name: "Hot Coffee",
       },
       {
         id: 2,
         imgsrc: drink2,
+        category: "drinks",
         name: "Cold Coffee",
       },
       {
         id: 3,
         imgsrc: drink3,
+        category: "drinks",
         name: "Hot Tea",
       },
       {
         id: 4,
         imgsrc: drink4,
+        category: "drinks",
         name: "Cold Tea",
       },
       {
         id: 5,
         imgsrc: drink5,
+        category: "drinks",
         name: "Refreshers",
       },
       {
         id: 6,
         imgsrc: drink6,
+        category: "drinks",
         name: "Frappuccino® Blended Beverage",
       },
       {
         id: 7,
         imgsrc: drink7,
+        category: "drinks",
         name: "Hot Chocolate, Lemonade & More",
       },
       {
         id: 8,
         imgsrc: drink8,
+        category: "drinks",
         name: "Bottled Beverages",
       },
     ],
@@ -121,26 +193,31 @@ export const menu = [
       {
         id: 9,
         imgsrc: food1,
+        category: "food",
         name: "Breakfast",
       },
       {
         id: 10,
         imgsrc: food2,
+        category: "food",
         name: "Bakery",
       },
       {
         id: 11,
         imgsrc: food3,
+        category: "food",
         name: "Treats",
       },
       {
         id: 12,
         imgsrc: food4,
+        category: "food",
         name: "Lunch",
       },
       {
         id: 13,
         imgsrc: food5,
+        category: "food",
         name: "Snacks",
       },
     ],
@@ -152,16 +229,19 @@ export const menu = [
       {
         id: 14,
         imgsrc: item1,
+        category: "at-home-coffee",
         name: "Whole Bean",
       },
       {
         id: 15,
         imgsrc: item2,
+        category: "at-home-coffee",
         name: "VIA® Instant",
       },
       {
         id: 16,
         imgsrc: item3,
+        category: "at-home-coffee",
         name: "Shopping Bag",
       },
     ],
