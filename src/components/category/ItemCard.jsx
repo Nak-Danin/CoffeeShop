@@ -4,7 +4,7 @@ const ItemCard = ({name, imgsrc}) => {
   return (
     <Link className="flex flex-col gap-2 items-center w-full hover:cursor-pointer">
       <div className="w-[75%] md:w-[85%] lg:w-[75%] rounded-full overflow-hidden">
-        <img className="w-full rounded-full" src={imgsrc} alt="img" />
+        <img className="w-full rounded-full scale-120" src={imgsrc} alt="img" />
       </div>
       <h1 className="text-[17px] lg:text-[20px] text-center">{name}</h1>
     </Link>

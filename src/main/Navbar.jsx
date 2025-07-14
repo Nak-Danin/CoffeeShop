@@ -52,6 +52,9 @@ const Navbar = () => {
           toggle ? "translate-x-0" : "translate-x-full"
         }`}
       >
+        <Link onClick={() => setToggle(false)} to="/">
+          Home
+        </Link>
         <Link onClick={() => setToggle(false)} to="menu">
           Menu
         </Link>

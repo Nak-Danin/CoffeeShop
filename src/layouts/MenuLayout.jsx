@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons/faChevronDown";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons/faShoppingBag";
 import { Link } from "react-router-dom";
+import { menu } from "../data/drinks";
+import { sanitizeForUrl } from "../utils/url_Helper";
 const MenuLayout = () => {
+  const drinks = menu[0].items;
+  const foods = menu[1].items;
+  const atHomeCoffee = menu[2].items;
   return (
     <main className="w-full h-full">
       <nav className="sticky z-[9] top-[66px] md:top-[100px] lg:top-0 w-full flex gap-6 bg-[#F9F9F9] py-3 ps-[30px] lg:ps-[120px] text-[16px] border-y-[1px] border-gray-300 font-[Roboto_Condensed]">
@@ -16,28 +21,21 @@ const MenuLayout = () => {
       <aside className="w-[30%] hidden lg:flex flex-col gap-4 ps-[120px] py-[40px]">
         <h1 className="font-semibold text-[20px]">Drinks</h1>
         <ul className="flex flex-col gap-4 text-gray-600 hover:cursor-pointer text-[17px]">
-          <li className="hover:text-black">Hot Coffee</li>
-          <li className="hover:text-black">Cold Coffee</li>
-          <li className="hover:text-black">Hot Tea</li>
-          <li className="hover:text-black">Cold Tea</li>
-          <li className="hover:text-black">Refreshers</li>
-          <li className="hover:text-black">Frappuccino® Blended Beverage</li>
-          <li className="hover:text-black">Hot Chocolate, Lemonade & More</li>
-          <li className="hover:text-black">Bottled Beverages</li>
+          {drinks.map(({id, name, category}) => (
+            <Link to = {`${category}/${sanitizeForUrl(name)}`} key={id} className="hover:text-black">{name}</Link>
+          ))}
         </ul>
         <h1 className="font-semibold text-[20px]">Food</h1>
         <ul className="flex flex-col gap-4 text-gray-600 hover:cursor-pointer text-[17px]">
-          <li className="hover:text-black">Breakfast</li>
-          <li className="hover:text-black">Bakery</li>
-          <li className="hover:text-black">Treats</li>
-          <li className="hover:text-black">Lunch</li>
-          <li className="hover:text-black">Snacks</li>
+          {foods.map(({id, name, category}) => (
+            <Link to = {`${category}/${sanitizeForUrl(name)}`} key={id} className="hover:text-black">{name}</Link>
+          ))}
         </ul>
         <h1 className="font-semibold text-[20px]">At Home Coffee</h1>
         <ul className="flex flex-col gap-4 text-gray-600 hover:cursor-pointer">
-          <li className="hover:text-black">Whole Bean</li>
-          <li className="hover:text-black">VIA® Instant</li>
-          <li className="hover:text-black">Shopping Bag</li>
+          {atHomeCoffee.map(({id, name, category}) => (
+            <Link to = {`${category}/${sanitizeForUrl(name)}`} key={id} className="hover:text-black">{name}</Link>
+          ))}
         </ul>
       </aside>
       <Outlet />
