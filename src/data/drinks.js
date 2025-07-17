@@ -229,21 +229,42 @@ export const menu = [
       {
         id: 14,
         imgsrc: item1,
-        category: "at-home-coffee",
+        category: "at home coffee",
         name: "Whole Bean",
       },
       {
         id: 15,
         imgsrc: item2,
-        category: "at-home-coffee",
+        category: "at home coffee",
         name: "VIA® Instant",
       },
       {
         id: 16,
         imgsrc: item3,
-        category: "at-home-coffee",
+        category: "at home coffee",
         name: "Shopping Bag",
       },
     ],
+  },
+];
+
+import promo1 from "../assets/images/promo1.jpg";
+import promo2 from "../assets/images/promo2.jpg";
+
+export const promo = [
+  {
+    id: 1,
+    img1: promo1,
+    title1: "The secret menu just dropped",
+    detail1:
+      "We're letting members in on our top drink customizations. Only in the Starbucks® app.*",
+    btn1: "Join Starbucks Rewards",
+    path1: "rewards",
+    img2: promo2,
+    title2: "Think your drink’s a winner?",
+    detail2:
+      "From July 14–20, submit your favorite customization for a chance to get it featured on the secret menu and win a $25,000 grand prize.**",
+    btn2: "Learn More",
+    path2: "gift cards",
   },
 ];

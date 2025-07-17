@@ -104,6 +104,96 @@ import bb18 from "../assets/images/Bottled Beverages/p18.jpg";
 import bb19 from "../assets/images/Bottled Beverages/p19.jpg";
 import bb20 from "../assets/images/Bottled Beverages/p20.jpg";
 
+import bf1 from "../assets/images/Breakfast/p1.jpg";
+import bf2 from "../assets/images/Breakfast/p2.jpg";
+import bf3 from "../assets/images/Breakfast/p3.jpg";
+import bf4 from "../assets/images/Breakfast/p4.jpg";
+import bf5 from "../assets/images/Breakfast/p5.jpg";
+import bf6 from "../assets/images/Breakfast/p6.jpg";
+import bf7 from "../assets/images/Breakfast/p7.jpg";
+import bf8 from "../assets/images/Breakfast/p8.jpg";
+import bf9 from "../assets/images/Breakfast/p9.jpg";
+import bf10 from "../assets/images/Breakfast/p10.jpg";
+import bf11 from "../assets/images/Breakfast/p11.jpg";
+import bf12 from "../assets/images/Breakfast/p12.jpg";
+
+import bk1 from "../assets/images/Bakery/p1.jpg";
+import bk2 from "../assets/images/Bakery/p2.jpg";
+import bk3 from "../assets/images/Bakery/p3.jpg";
+import bk4 from "../assets/images/Bakery/p4.jpg";
+import bk5 from "../assets/images/Bakery/p5.jpg";
+import bk6 from "../assets/images/Bakery/p6.jpg";
+import bk7 from "../assets/images/Bakery/p7.jpg";
+import bk8 from "../assets/images/Bakery/p8.jpg";
+import bk9 from "../assets/images/Bakery/p9.jpg";
+import bk10 from "../assets/images/Bakery/p10.jpg";
+import bk11 from "../assets/images/Bakery/p11.jpg";
+import bk12 from "../assets/images/Bakery/p12.jpg";
+import bk13 from "../assets/images/Bakery/p13.jpg";
+import bk14 from "../assets/images/Bakery/p14.jpg";
+
+import treat1 from "../assets/images/Treats/p1.jpg";
+import treat2 from "../assets/images/Treats/p2.jpg";
+import treat3 from "../assets/images/Treats/p3.jpg";
+import treat4 from "../assets/images/Treats/p4.jpg";
+import treat5 from "../assets/images/Treats/p5.jpg";
+
+import lunch1 from "../assets/images/Lunch/p1.jpg";
+import lunch2 from "../assets/images/Lunch/p2.jpg";
+import lunch3 from "../assets/images/Lunch/p3.jpg";
+import lunch4 from "../assets/images/Lunch/p4.jpg";
+import lunch5 from "../assets/images/Lunch/p5.jpg";
+import lunch6 from "../assets/images/Lunch/p6.jpg";
+import lunch7 from "../assets/images/Lunch/p7.jpg";
+import lunch8 from "../assets/images/Lunch/p8.jpg";
+import lunch9 from "../assets/images/Lunch/p9.jpg";
+import lunch10 from "../assets/images/Lunch/p10.jpg";
+import lunch11 from "../assets/images/Lunch/p11.jpg";
+
+import snack1 from "../assets/images/Snack/p1.jpg";
+import snack2 from "../assets/images/Snack/p2.jpg";
+import snack3 from "../assets/images/Snack/p3.jpg";
+import snack4 from "../assets/images/Snack/p4.jpg";
+import snack5 from "../assets/images/Snack/p5.jpg";
+import snack6 from "../assets/images/Snack/p6.jpg";
+import snack7 from "../assets/images/Snack/p7.jpg";
+import snack8 from "../assets/images/Snack/p8.jpg";
+import snack9 from "../assets/images/Snack/p9.jpg";
+import snack10 from "../assets/images/Snack/p10.jpg";
+import snack11 from "../assets/images/Snack/p11.jpg";
+import snack12 from "../assets/images/Snack/p12.jpg";
+import snack13 from "../assets/images/Snack/p13.jpg";
+import snack14 from "../assets/images/Snack/p14.jpg";
+import snack15 from "../assets/images/Snack/p15.jpg";
+import snack16 from "../assets/images/Snack/p16.jpg";
+
+import bean1 from "../assets/images/Whole Bean/p1.jpg";
+import bean2 from "../assets/images/Whole Bean/p2.jpg";
+import bean3 from "../assets/images/Whole Bean/p3.jpg";
+import bean4 from "../assets/images/Whole Bean/p4.jpg";
+import bean5 from "../assets/images/Whole Bean/p5.jpg";
+import bean6 from "../assets/images/Whole Bean/p6.jpg";
+import bean7 from "../assets/images/Whole Bean/p7.jpg";
+import bean8 from "../assets/images/Whole Bean/p8.jpg";
+import bean9 from "../assets/images/Whole Bean/p9.jpg";
+import bean10 from "../assets/images/Whole Bean/p10.jpg";
+import bean11 from "../assets/images/Whole Bean/p11.jpg";
+import bean12 from "../assets/images/Whole Bean/p12.jpg";
+import bean13 from "../assets/images/Whole Bean/p13.jpg";
+import bean14 from "../assets/images/Whole Bean/p14.jpg";
+import bean15 from "../assets/images/Whole Bean/p15.jpg";
+import bean16 from "../assets/images/Whole Bean/p16.jpg";
+import bean17 from "../assets/images/Whole Bean/p17.jpg";
+import bean18 from "../assets/images/Whole Bean/p18.jpg";
+
+import via1 from "../assets/images/Via Instant/p1.jpg";
+import via2 from "../assets/images/Via Instant/p2.jpg";
+import via3 from "../assets/images/Via Instant/p3.jpg";
+import via4 from "../assets/images/Via Instant/p4.jpg";
+import via5 from "../assets/images/Via Instant/p5.jpg";
+
+import bag1 from "../assets/images/Shopping bag/p1.jpg";
+
 export const products = [
   {
     key: 1,
@@ -610,6 +700,334 @@ export const products = [
         imgsrc: bb20,
       },
     ],
+  },
+  {
+    key: 40,
+    category: "food",
+    type: "Breakfast",
+    variety: "Breakfast Sandwiches",
+    items: [
+      { id: 120, name: "Egg, Pesto & Mozzarella Sandwich ", imgsrc: bf1 },
+      { id: 121, name: "Bacon, Gouda & Egg Sandwich ", imgsrc: bf2 },
+      {
+        id: 122,
+        name: "Double-Smoked Bacon, Cheddar & Egg Sandwich ",
+        imgsrc: bf3,
+      },
+      { id: 123, name: "Sausage, Cheddar & Egg Sandwich ", imgsrc: bf4 },
+      {
+        id: 124,
+        name: "Turkey Bacon, Cheddar & Egg White Sandwich ",
+        imgsrc: bf5,
+      },
+      { id: 125, name: "Impossible™ Breakfast Sandwich ", imgsrc: bf6 },
+    ],
+  },
+  {
+    key: 41,
+    category: "food",
+    type: "Breakfast",
+    variety: "Breakfast Wraps",
+    items: [
+      { id: 126, name: "Bacon, Sausage & Egg Wrap ", imgsrc: bf7 },
+      { id: 127, name: "Spinach, Feta & Egg White Wrap ", imgsrc: bf8 },
+    ],
+  },
+  {
+    key: 41,
+    category: "food",
+    type: "Breakfast",
+    variety: "Egg Bites & Bakes",
+    items: [
+      { id: 128, name: "Bacon & Gruyère Egg Bites ", imgsrc: bf9 },
+      {
+        id: 129,
+        name: "Egg White & Roasted Red Pepper Egg Bites ",
+        imgsrc: bf10,
+      },
+      { id: 130, name: "Kale & Mushroom Egg Bites ", imgsrc: bf11 },
+      { id: 131, name: "Potato, Cheddar & Chive Bakes ", imgsrc: bf12 },
+    ],
+  },
+  {
+    key: 42,
+    category: "food",
+    type: "Bakery",
+    variety: "Croissants & Danishes",
+    items: [
+      { id: 132, name: "Baked Apple Croissant", imgsrc: bk1 },
+      { id: 133, name: "Ham & Swiss Croissant", imgsrc: bk2 },
+      { id: 134, name: "Butter Croissant", imgsrc: bk3 },
+      { id: 135, name: "Chocolate Croissant", imgsrc: bk4 },
+      { id: 136, name: "Cheese Danish", imgsrc: bk5 },
+    ],
+  },
+  {
+    key: 43,
+    category: "food",
+    type: "Bakery",
+    variety: "Loaf Cakes",
+    items: [
+      { id: 137, name: "Banana, Walnut & Pecan Loaf", imgsrc: bk6 },
+      { id: 138, name: "Iced Lemon Loaf", imgsrc: bk7 },
+      { id: 139, name: "Pumpkin & Pepita Loaf", imgsrc: bk8 },
+      { id: 140, name: "Cinnamon Coffee", imgsrc: bk9 },
+    ],
+  },
+  {
+    key: 44,
+    category: "food",
+    type: "Bakery",
+    variety: "More Bakery Classics",
+    items: [
+      { id: 141, name: "Blueberry Streusel Muffin", imgsrc: bk10 },
+      { id: 142, name: "Double Chocolate Brownie", imgsrc: bk11 },
+      { id: 143, name: "Petite Vanilla Bean Scone", imgsrc: bk12 },
+      { id: 144, name: "Plain Bagel", imgsrc: bk13 },
+      { id: 145, name: "Everything Bagel", imgsrc: bk14 },
+    ],
+  },
+  {
+    key: 45,
+    category: "food",
+    type: "Treats",
+    variety: "Cake Pops",
+    items: [
+      { id: 146, name: "Strawberries & Cream Cake Pop", imgsrc: treat1 },
+      { id: 147, name: "Birthday Cake Pop", imgsrc: treat2 },
+      { id: 148, name: "Chocolate Cake Pop", imgsrc: treat3 },
+    ],
+  },
+  {
+    key: 46,
+    category: "food",
+    type: "Treats",
+    variety: "Cookies",
+    items: [
+      { id: 149, name: "Chocolate Chip Cookies", imgsrc: treat4 },
+      { id: 150, name: "Chocolate Chunk Cookie", imgsrc: treat5 },
+    ],
+  },
+  {
+    key: 47,
+    category: "food",
+    type: "Lunch",
+    variety: "Lunch Sandwiches",
+    items: [
+      { id: 151, name: "Crispy Grill Cheese On Sourdough", imgsrc: lunch1 },
+      { id: 152, name: "Ham & Swiss Baguette", imgsrc: lunch2 },
+      {
+        id: 153,
+        name: "Turkey, Provolone & Pesto On Ciabatta",
+        imgsrc: lunch3,
+      },
+      { id: 154, name: "Tomato & Mozzarella On Focaccia", imgsrc: lunch4 },
+    ],
+  },
+  {
+    key: 48,
+    category: "food",
+    type: "Lunch",
+    variety: "Pockets",
+    items: [
+      { id: 155, name: "Spicy Falafel Pocket", imgsrc: lunch5 },
+      { id: 156, name: "Jalapeño Chicken Pocket ", imgsrc: lunch6 },
+    ],
+  },
+  {
+    key: 49,
+    category: "food",
+    type: "Lunch",
+    variety: "Protein Boxes",
+    items: [
+      { id: 157, name: "Eggs & Gouda Protein Box", imgsrc: lunch7 },
+      { id: 158, name: "Cheese Trio Protein Box", imgsrc: lunch8 },
+      { id: 159, name: "Chedda & Uncured Salami Protein Box", imgsrc: lunch9 },
+      { id: 160, name: "Eggs & Cheedar Protein Box", imgsrc: lunch10 },
+      { id: 161, name: "Cheese & Fruit Protein Box ", imgsrc: lunch11 },
+    ],
+  },
+  {
+    key: 50,
+    category: "food",
+    type: "Snacks",
+    variety: "Protein & Snack Bars",
+    items: [
+      {
+        id: 162,
+        name: "All In™ Madagascar Vanilla, Honey & Almonds Bar ",
+        imgsrc: snack1,
+      },
+      {
+        id: 163,
+        name: "Perfect Bar® – Dark Chocolate Chip Peanut Butter ",
+        imgsrc: snack2,
+      },
+      { id: 164, name: "Perfect Bar® Peanut Butter ", imgsrc: snack3 },
+      { id: 165, name: "KIND - Almond Coconut Cashew Chai ", imgsrc: snack4 },
+      {
+        id: 166,
+        name: "KIND® Salted Caramel & Dark Chocolate Nut Bar ",
+        imgsrc: snack5,
+      },
+      { id: 167, name: "That's It® – Apple + Mango Bar ", imgsrc: snack6 },
+      { id: 168, name: "That's It® – Apple + Blueberry Bar ", imgsrc: snack7 },
+    ],
+  },
+  {
+    key: 51,
+    category: "food",
+    type: "Snacks",
+    variety: "Salty Snacks",
+    items: [
+      {
+        id: 169,
+        name: "Siete Sea Salt Kettle Cooked Potato Chips ",
+        imgsrc: snack8,
+      },
+      {
+        id: 170,
+        name: "Siete Lime Grain Free Tortilla Chips ",
+        imgsrc: snack9,
+      },
+      { id: 171, name: "Starbucks Butter Popcorn ", imgsrc: snack10 },
+      {
+        id: 172,
+        name: "Country Archer™ – Hickory Smoke Turkey Jerky ",
+        imgsrc: snack11,
+      },
+    ],
+  },
+  {
+    key: 52,
+    category: "food",
+    type: "Snacks",
+    variety: "Sweet Snacks",
+    items: [
+      { id: 173, name: "Madeleines", imgsrc: snack12 },
+      { id: 174, name: "Vanilla Biscotti with Almonds", imgsrc: snack13 },
+      { id: 175, name: "Marshmallow Dream Bar", imgsrc: snack14 },
+      {
+        id: 176,
+        name: "SkinnyDipped Dark Chocolate Cocoa Almonds",
+        imgsrc: snack15,
+      },
+      { id: 177, name: "SkinnyDipped Lemon Bliss Almonds", imgsrc: snack16 },
+    ],
+  },
+  {
+    key: 53,
+    category: "at home coffee",
+    type: "Whole Bean",
+    variety: "Starbucks Reserve®",
+    items: [
+      {
+        id: 178,
+        name: "Sun-Dried Ethiopia Oromia West Arsi Packaged Coffee Whole Bean ",
+        imgsrc: bean1,
+      },
+      {
+        id: 179,
+        name: "Mexico Tenejapa San Cristobal Packaged Coffee Whole Bean ",
+        imgsrc: bean2,
+      },
+    ],
+  },
+  {
+    key: 54,
+    category: "at home coffee",
+    type: "Whole Bean",
+    variety: "Blonde Roast",
+    items: [
+      { id: 180, name: "Starbucks® Sunsera Blend", imgsrc: bean3 },
+      { id: 181, name: "Starbucks® Green Apron Blend™ ", imgsrc: bean4 },
+      { id: 182, name: "Veranda Blend® ", imgsrc: bean5 },
+      { id: 183, name: "Starbucks® Blonde Espresso Roast ", imgsrc: bean6 },
+    ],
+  },
+  {
+    key: 55,
+    category: "at home coffee",
+    type: "Whole Bean",
+    variety: "Medium Roast",
+    items: [
+      { id: 184, name: "Starbucks Odyssey Blend® 2025 ", imgsrc: bean7 },
+      { id: 185, name: "Starbucks Siren’s Blend™ ", imgsrc: bean8 },
+      { id: 186, name: "Guatemala Antigua ", imgsrc: bean9 },
+      { id: 187, name: "Pike Place® Roast ", imgsrc: bean10 },
+      { id: 188, name: "Decaf Pike Place Roast ", imgsrc: bean11 },
+      { id: 189, name: "Organic Yukon Blend® ", imgsrc: bean12 },
+    ],
+  },
+  {
+    key: 56,
+    category: "at home coffee",
+    type: "Whole Bean",
+    variety: "Dark Roast",
+    items: [
+      { id: 190, name: "Caffè Verona® ", imgsrc: bean13 },
+      { id: 191, name: "Espresso Roast ", imgsrc: bean14 },
+      { id: 192, name: "Italian Roast ", imgsrc: bean15 },
+      { id: 193, name: "Komodo Dragon Blend® ", imgsrc: bean16 },
+      { id: 194, name: "Sumatra ", imgsrc: bean17 },
+      { id: 195, name: "Decaf Sumatra ", imgsrc: bean18 },
+    ],
+  },
+  {
+    key: 57,
+    category: "at home coffee",
+    type: "VIA® Instant",
+    variety: "Flavored",
+    items: [
+      {
+        id: 196,
+        name: "Starbucks VIA® Instant Sweetened Iced Coffee ",
+        imgsrc: via1,
+      },
+    ],
+  },
+  {
+    key: 58,
+    category: "at home coffee",
+    type: "VIA® Instant",
+    variety: "Blonde Roast",
+    items: [
+      { id: 197, name: "Starbucks VIA® Instant Veranda Blend® ", imgsrc: via2 },
+    ],
+  },
+  {
+    key: 59,
+    category: "at home coffee",
+    type: "VIA® Instant",
+    variety: "Medium Roast",
+    items: [
+      {
+        id: 198,
+        name: "Starbucks VIA® Instant Pike Place® Roast ",
+        imgsrc: via3,
+      },
+    ],
+  },
+  {
+    key: 60,
+    category: "at home coffee",
+    type: "VIA® Instant",
+    variety: "Dark Roast",
+    items: [
+      { id: 199, name: "Starbucks VIA® Instant Italian Roast ", imgsrc: via4 },
+      {
+        id: 200,
+        name: "Starbucks VIA® Instant Decaf Italian Roast ",
+        imgsrc: via5,
+      },
+    ],
+  },
+  {
+    key: 61,
+    category: "at home coffee",
+    type: "Shopping Bag",
+    variety: "",
+    items: [{ id: 201, name: "Small Shopping Bag", imgsrc: bag1 }],
   },
 ];
 

@@ -1,8 +1,38 @@
-import { DrinkBanner } from "../components";
+import { DrinkBanner, PromoBanner } from "../components";
 import { banners } from "../data/drinks";
+import { promo } from "../data/drinks";
 const Home = () => {
   return (
     <div className="flex flex-col gap-[30px] w-full h-full items-center justify-center pt-[30px]">
+      {promo.map(
+        ({
+          id,
+          img1,
+          img2,
+          title1,
+          title2,
+          detail1,
+          detail2,
+          btn1,
+          btn2,
+          path1,
+          path2,
+        }) => (
+          <PromoBanner
+            key={id}
+            img1={img1}
+            img2={img2}
+            title1={title1}
+            title2={title2}
+            detail1={detail1}
+            detail2={detail2}
+            btn1={btn1}
+            btn2={btn2}
+            path1={path1}
+            path2={path2}
+          />
+        )
+      )}
       {banners.map(
         ({ id, title, imgsrc, reverse, description, btn, bg, textColor }) => (
           <DrinkBanner

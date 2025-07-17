@@ -2,7 +2,7 @@ import { faBars, faMapLocation, faX } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -15,15 +15,24 @@ const Navbar = () => {
       <nav className="flex sticky top-0 lg:static w-full justify-between items-center lg:px-9 md:px-5 px-3 py-3 md:py-6 border-y-[1px] border-gray-200 shadow shadow-gray-400/50 bg-white z-[1000]">
         <aside className="flex gap-[30px] items-center text-[15px] font-sans tracking-wider">
           <img className="w-[40px] md:w-[50px] me-1" src={logo} alt="logo" />
-          <Link to="menu" className="font-bold hidden md:block">
+          <NavLink
+            to="menu"
+            className="font-bold hidden md:block decoration-green-600 underline-offset-[15px] decoration-3"
+          >
             MENU
-          </Link>
-          <Link to="rewards" className="font-bold hidden md:block">
+          </NavLink>
+          <NavLink
+            to="rewards"
+            className="font-bold hidden md:block decoration-green-600 underline-offset-[15px] decoration-3"
+          >
             REWARDS
-          </Link>
-          <Link to="giftcard" className="font-bold hidden md:block">
+          </NavLink>
+          <NavLink
+            to="giftcard"
+            className="font-bold hidden md:block decoration-green-600 underline-offset-[15px] decoration-3"
+          >
             GIFT CARDS
-          </Link>
+          </NavLink>
         </aside>
         <aside className="md:flex gap-4 h-fit text-[16px] hidden">
           <button className="flex gap-2 items-center font-semibold me-[20px]">

@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 const Category = () => {
   const { category, type } = useParams();
   const itemType = type.replace(/-/g, " ");
+  const cate = category.replace(/-/g, " ");
   const filterProducts = products.filter(
-    (p) => p.category === category && p.type === itemType
+    (p) => p.category === cate && p.type === itemType
   );
   return (
     <aside className="w-[95%] lg:w-[70%] flex flex-col gap-[30px] py-[40px] px-[15px] md:px-[40px] lg:px-[50px] pe-[10px] lg:pe-[10%]">

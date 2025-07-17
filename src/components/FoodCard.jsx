@@ -4,7 +4,7 @@ const FoodCard = ({ imgsrc, name, category }) => {
   const cleanName = sanitizeForUrl(name);
   return (
     <Link
-      to={`${category}/${cleanName}`}
+      to={`${sanitizeForUrl(category)}/${cleanName}`}
       className="flex gap-5 items-center w-full hover:cursor-pointer"
     >
       <div className="w-[100px] lg:w-[120px] rounded-full overflow-hidden">
