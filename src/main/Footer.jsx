@@ -9,7 +9,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons/faXTwitter";
 const Footer = () => {
   return (
-    <div className="w-full border-y-[2px] border-gray-300 shadow-[0_-4px_6px_5px] shadow-[#f9fafb] p-[40px]">
+    <div className="w-full border-y-[2px] border-gray-300 p-[40px]">
       <main className="lg:grid grid-cols-5 gap-2 hidden pb-[35px]">
         {topic.map(
           ({ id, main, link1, link2, link3, link4, link5, link6, link7 }) => (

@@ -205,31 +205,68 @@ export const products = [
         id: 1,
         name: "Blonde Roast - Sunsera",
         imgsrc: hc3,
+        price: 2.99,
+        description: "Smooth and mellow light roast with citrusy notes.",
+        nutrition: {
+          calories: { short: 90, tall: 120, grande: 150 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
       {
         id: 2,
-        name: "Medium Roast - Pike Place® Roast ",
+        name: "Medium Roast - Pike Place® Roast",
         imgsrc: hc3,
+        price: 3.25,
+        description:
+          "Classic medium roast with balanced cocoa and nut flavors.",
+        nutrition: {
+          calories: { short: 95, tall: 125, grande: 155 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
       {
         id: 3,
-        name: "Dark Roast - Sumatra ",
+        name: "Dark Roast - Sumatra",
         imgsrc: hc3,
+        price: 3.25,
+        description: "Bold and earthy dark roast with herbal notes.",
+        nutrition: {
+          calories: { short: 100, tall: 130, grande: 160 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
       {
         id: 4,
-        name: "Dark Roast - Sumatra ",
+        name: "Dark Roast - Sumatra",
         imgsrc: hc3,
+        price: 3.25,
+        description: "Bold and earthy dark roast with herbal notes.",
+        nutrition: {
+          calories: { short: 100, tall: 130, grande: 160 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
       {
         id: 5,
         name: "Decaf Roast - Pike Place® Roast",
         imgsrc: hc3,
+        price: 3.25,
+        description: "Decaffeinated version of the classic medium roast.",
+        nutrition: {
+          calories: { short: 95, tall: 125, grande: 155 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
       {
         id: 6,
         name: "Caffè Misto",
         imgsrc: hc2,
+        price: 3.75,
+        description: "Brewed coffee blended with steamed milk.",
+        nutrition: {
+          calories: { short: 110, tall: 140, grande: 170 },
+        },
+        sizes: ["short", "tall", "grande"],
       },
     ],
   },
@@ -238,7 +275,19 @@ export const products = [
     category: "drinks",
     type: "Hot Coffee",
     variety: "Americano",
-    items: [{ id: 7, name: "Caffè Americano", imgsrc: hc1 }],
+    items: [
+      {
+        id: 7,
+        name: "Caffè Americano",
+        imgsrc: hc1,
+        price: 3.5,
+        description: "Espresso shots topped with hot water for a bold taste.",
+        nutrition: {
+          calories: { short: 10, tall: 15, grande: 20 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+    ],
   },
   {
     key: 3,
@@ -246,10 +295,50 @@ export const products = [
     type: "Hot Coffee",
     variety: "Latte",
     items: [
-      { id: 8, name: "Caffè Latte", imgsrc: hc4 },
-      { id: 9, name: "Cinnamon Dolce Latte ", imgsrc: hc8 },
-      { id: 10, name: "Starbucks® Blonde Vanilla Latte ", imgsrc: hc5 },
-      { id: 11, name: "Lavender Oatmilk Latte ", imgsrc: hc7 },
+      {
+        id: 8,
+        name: "Caffè Latte",
+        imgsrc: hc4,
+        price: 4.25,
+        description: "Espresso with steamed milk and a light layer of foam.",
+        nutrition: {
+          calories: { short: 150, tall: 190, grande: 230 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 9,
+        name: "Cinnamon Dolce Latte",
+        imgsrc: hc8,
+        price: 4.75,
+        description: "Sweet cinnamon-flavored latte with whipped cream.",
+        nutrition: {
+          calories: { short: 280, tall: 350, grande: 420 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 10,
+        name: "Starbucks® Blonde Vanilla Latte",
+        imgsrc: hc5,
+        price: 4.75,
+        description: "Smooth blonde espresso with vanilla and steamed milk.",
+        nutrition: {
+          calories: { short: 250, tall: 320, grande: 390 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 11,
+        name: "Lavender Oatmilk Latte",
+        imgsrc: hc7,
+        price: 5.25,
+        description: "Floral lavender syrup with oatmilk and espresso.",
+        nutrition: {
+          calories: { short: 200, tall: 260, grande: 320 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
     ],
   },
   {
@@ -257,7 +346,19 @@ export const products = [
     category: "drinks",
     type: "Hot Coffee",
     variety: "Cappuccino",
-    items: [{ id: 12, name: "Cappuccino", imgsrc: hc10 }],
+    items: [
+      {
+        id: 12,
+        name: "Cappuccino",
+        imgsrc: hc10,
+        price: 4.25,
+        description: "Equal parts espresso, steamed milk, and foam.",
+        nutrition: {
+          calories: { short: 120, tall: 150, grande: 180 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+    ],
   },
   {
     key: 5,
@@ -265,8 +366,29 @@ export const products = [
     type: "Hot Coffee",
     variety: "Mocha",
     items: [
-      { id: 13, name: "Caffè Mocha", imgsrc: hc11 },
-      { id: 14, name: "White Chocolate Mocha", imgsrc: hc9 },
+      {
+        id: 13,
+        name: "Caffè Mocha",
+        imgsrc: hc11,
+        price: 4.75,
+        description:
+          "Espresso with chocolate syrup, steamed milk, and whipped cream.",
+        nutrition: {
+          calories: { short: 300, tall: 370, grande: 440 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 14,
+        name: "White Chocolate Mocha",
+        imgsrc: hc9,
+        price: 4.75,
+        description: "Espresso with white chocolate sauce and steamed milk.",
+        nutrition: {
+          calories: { short: 330, tall: 400, grande: 470 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
     ],
   },
   {
@@ -275,8 +397,29 @@ export const products = [
     type: "Hot Coffee",
     variety: "Macchiato",
     items: [
-      { id: 15, name: "Esspresso Macchiato", imgsrc: hc12 },
-      { id: 16, name: "Caramel Macchito", imgsrc: hc6 },
+      {
+        id: 15,
+        name: "Espresso Macchiato",
+        imgsrc: hc12,
+        price: 3.5,
+        description: "Espresso marked with a dollop of foam.",
+        nutrition: {
+          calories: { short: 15, tall: 20, grande: 25 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 16,
+        name: "Caramel Macchiato",
+        imgsrc: hc6,
+        price: 4.75,
+        description:
+          "Vanilla syrup, steamed milk, espresso, and caramel drizzle.",
+        nutrition: {
+          calories: { short: 220, tall: 280, grande: 340 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
     ],
   },
   {
@@ -284,7 +427,19 @@ export const products = [
     category: "drinks",
     type: "Hot Coffee",
     variety: "Flat White",
-    items: [{ id: 16, name: "Flat White", imgsrc: hc13 }],
+    items: [
+      {
+        id: 202,
+        name: "Flat White",
+        imgsrc: hc13,
+        price: 4.5,
+        description: "Smooth ristretto shots with velvety steamed milk.",
+        nutrition: {
+          calories: { short: 170, tall: 210, grande: 250 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+    ],
   },
   {
     key: 8,
@@ -292,8 +447,29 @@ export const products = [
     type: "Hot Coffee",
     variety: "Cortado",
     items: [
-      { id: 17, name: "Cortado", imgsrc: hc14 },
-      { id: 18, name: "Brown Sugar Oatmilk Cortado", imgsrc: hc15 },
+      {
+        id: 17,
+        name: "Cortado",
+        imgsrc: hc14,
+        price: 3.75,
+        description: "Equal parts espresso and steamed milk, Spanish-style.",
+        nutrition: {
+          calories: { short: 80, tall: 100, grande: 120 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 18,
+        name: "Brown Sugar Oatmilk Cortado",
+        imgsrc: hc15,
+        price: 4.75,
+        description:
+          "Espresso with creamy oatmilk and caramelized brown sugar.",
+        nutrition: {
+          calories: { short: 120, tall: 150, grande: 180 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
     ],
   },
   {
@@ -302,8 +478,28 @@ export const products = [
     type: "Hot Coffee",
     variety: "Espresso Shot",
     items: [
-      { id: 19, name: "Espresso", imgsrc: hc16 },
-      { id: 20, name: "Espresso Con Panna", imgsrc: hc17 },
+      {
+        id: 19,
+        name: "Espresso",
+        imgsrc: hc16,
+        price: 2.5,
+        description: "A single shot of rich, concentrated espresso.",
+        nutrition: {
+          calories: { short: 5, tall: 10, grande: 15 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
+      {
+        id: 20,
+        name: "Espresso Con Panna",
+        imgsrc: hc17,
+        price: 3.25,
+        description: "Espresso topped with a dollop of whipped cream.",
+        nutrition: {
+          calories: { short: 30, tall: 40, grande: 50 },
+        },
+        sizes: ["short", "tall", "grande"],
+      },
     ],
   },
   {
@@ -734,7 +930,7 @@ export const products = [
     ],
   },
   {
-    key: 41,
+    key: 62,
     category: "food",
     type: "Breakfast",
     variety: "Egg Bites & Bakes",

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RootLayout, MenuLayout } from "./layouts";
-import { Home, Menu, Feature, Category } from "./pages";
+import { Home, Menu, Feature, Category, Product } from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
         path: "feature",
         element: <Feature />,
       },
+      {
+        path: 'product/:id',
+        element: <Product/>
+      }
     ],
   },
 ]);

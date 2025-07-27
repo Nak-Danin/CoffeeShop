@@ -14,7 +14,9 @@ const Navbar = () => {
     <>
       <nav className="flex sticky top-0 lg:static w-full justify-between items-center lg:px-9 md:px-5 px-3 py-3 md:py-6 border-y-[1px] border-gray-200 shadow shadow-gray-400/50 bg-white z-[1000]">
         <aside className="flex gap-[30px] items-center text-[15px] font-sans tracking-wider">
-          <img className="w-[40px] md:w-[50px] me-1" src={logo} alt="logo" />
+          <Link to="/">
+            <img className="w-[40px] md:w-[50px] me-1" src={logo} alt="logo" />
+          </Link>
           <NavLink
             to="menu"
             className="font-bold hidden md:block decoration-green-600 underline-offset-[15px] decoration-3"

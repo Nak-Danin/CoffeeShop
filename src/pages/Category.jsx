@@ -19,7 +19,7 @@ const Category = () => {
       </div>
       <h1 className="text-[26px] lg:text-[30px] font-bold">{itemType}</h1>
       {filterProducts.map(({ key, variety, items }) => (
-        <ItemContainer key={key} items={items} variety={variety} />
+        <ItemContainer key={key} items={items} variety={variety}/>
       ))}
     </aside>
   );
