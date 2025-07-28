@@ -40,7 +40,7 @@ const Product = () => {
           />
         </aside>
         <aside className="flex flex-col justify-center items-center gap-2 lg:items-baseline w-full lg:w-1/2">
-          <h1 className="font-bold text-[25px] md:text-[35px] lg:text-[40px] text-white text-center lg:text-start">
+          <h1 className="font-bold text-[25px] md:text-[35px] lg:text-[40px] text-white text-center lg:text-start w-[90%]">
             {foundItem.name}
           </h1>
           {category == "drinks" && type != "Bottled Beverages" && (
