@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RootLayout, MenuLayout } from "./layouts";
-import { Home, Menu, Feature, Category, Product } from "./pages";
+import { Home, Menu, Feature, Category, Product, Reward } from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "menu/product/:id",
         element: <Product />,
+      },
+      {
+        path: "rewards",
+        element: <Reward />,
       },
     ],
   },

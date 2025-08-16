@@ -5,7 +5,7 @@ const Feature = () => {
     <div className="flex flex-col gap-[30px] w-full h-full items-center justify-center py-[30px]">
       <h1 className="text-[30px] lg:text-[50px] text-[#1E3932] text-center lg:pb-[20px] font-bold tracking-wider">See you on the patio</h1>
       {features.map(
-        ({ id, title, imgsrc, reverse, description, btn, bg, textColor }) => (
+        ({ id, title, imgsrc, reverse, description, btn, bg, textColor, path }) => (
           <DrinkBanner
             key={id}
             reverse={reverse}
@@ -15,6 +15,7 @@ const Feature = () => {
             btn={btn}
             bg={bg}
             textColor={textColor}
+            path={path}
           />
         )
       )}

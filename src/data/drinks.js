@@ -13,6 +13,7 @@ export const banners = [
     btn: "Order now",
     bg: "bg-[#F7F0E4]",
     textColor: "text-[#32462F]",
+    path: "menu/drinks/Frappuccino®-Blended-Beverage",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const banners = [
     btn: "View the menu",
     bg: "bg-[#32462F]",
     textColor: "text-white",
+    path: "menu/drinks/Cold-Coffee",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ export const banners = [
     btn: "Join now",
     bg: "bg-[#D1D1AA]",
     textColor: "text-[#32462F]",
+    path:"rewards"
   },
   {
     id: 4,
@@ -46,6 +49,7 @@ export const banners = [
     btn: "Learn more",
     bg: "bg-[#006242]",
     textColor: "text-white",
+    path: "featured"
   },
 ];
 
@@ -66,6 +70,7 @@ export const features = [
     btn: "Order now",
     bg: "bg-[#D1D1AA]",
     textColor: "text-[#32462F]",
+    path: "/menu/product/85",
   },
   {
     id: 2,
@@ -77,6 +82,7 @@ export const features = [
     btn: "Order now",
     bg: "bg-[#D1D1AA]",
     textColor: "text-[#32462F]",
+    path: "/menu/product/35",
   },
   {
     id: 3,
@@ -88,6 +94,7 @@ export const features = [
     btn: "Order now",
     bg: "bg-[#D1D1AA]",
     textColor: "text-[#32462F]",
+    path: "/menu/product/25",
   },
   {
     id: 4,
@@ -99,6 +106,7 @@ export const features = [
     btn: "Order now",
     bg: "bg-[#32462F]",
     textColor: "text-white",
+    path: "/menu/product/78",
   },
   {
     id: 5,
@@ -110,6 +118,7 @@ export const features = [
     btn: "Order now",
     bg: "bg-[#32462F]",
     textColor: "text-white",
+    path: "/menu/product/151",
   },
 ];
 

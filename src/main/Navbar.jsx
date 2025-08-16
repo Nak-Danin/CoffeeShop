@@ -69,7 +69,7 @@ const Navbar = () => {
         <Link onClick={() => setToggle(false)} to="menu">
           Menu
         </Link>
-        <Link onClick={() => setToggle(false)} to="reward">
+        <Link onClick={() => setToggle(false)} to="rewards">
           Rewards
         </Link>
         <Link onClick={() => setToggle(false)} to="giftcard">

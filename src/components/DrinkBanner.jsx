@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const DrinkBanner = ({
   reverse,
   imgsrc,
@@ -6,6 +7,7 @@ const DrinkBanner = ({
   btn,
   bg,
   textColor,
+  path,
 }) => {
   return (
     <div
@@ -25,13 +27,13 @@ const DrinkBanner = ({
         <h1 className="text-[25px] md:text-[27px] lg:text-[28px] text-center w-[95%] md:w-[80%] lg:w-[65%]">
           {description}
         </h1>
-        <button
+        <Link to={path}
           className={`px-3 py-1 border-[2px] font-sans hover:bg-gray-400/30 hover:cursor-pointer ${
             textColor === "text-white" ? "border-white" : "border-black"
           } rounded-full font-semibold`}
         >
           {btn}
-        </button>
+        </Link>
       </article>
     </div>
   );

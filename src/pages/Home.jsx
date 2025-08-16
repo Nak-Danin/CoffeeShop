@@ -34,7 +34,7 @@ const Home = () => {
         )
       )}
       {banners.map(
-        ({ id, title, imgsrc, reverse, description, btn, bg, textColor }) => (
+        ({ id, title, imgsrc, reverse, description, btn, bg, textColor, path }) => (
           <DrinkBanner
             key={id}
             reverse={reverse}
@@ -44,6 +44,7 @@ const Home = () => {
             btn={btn}
             bg={bg}
             textColor={textColor}
+            path={path}
           />
         )
       )}
