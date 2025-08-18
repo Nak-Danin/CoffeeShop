@@ -1,6 +1,15 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RootLayout, MenuLayout } from "./layouts";
-import { Home, Menu, Feature, Category, Product, Reward } from "./pages";
+import {
+  Home,
+  Menu,
+  Feature,
+  Category,
+  Product,
+  Reward,
+  GiftCards,
+  CreateGiftCard,
+} from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "rewards",
         element: <Reward />,
+      },
+      {
+        path: "giftcards",
+        element: <GiftCards />,
+      },
+      {
+        path: "giftcards/:id",
+        element: <CreateGiftCard />,
       },
     ],
   },

@@ -22,7 +22,7 @@ const Reward = () => {
   const upperEarnStar = earnStars.slice(0, 2);
   const lowerEarnStar = earnStars.slice(2, 4);
   return (
-    <main className="w-full h-full flex flex-col gap-[50px] justify-center items-center md:py-[30px]">
+    <main className="w-full h-full flex flex-col gap-[50px] justify-center items-center md:pt-[30px]">
       <DrinkBanner
         reverse={true}
         imgsrc={banner}

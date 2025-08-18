@@ -30,7 +30,7 @@ const Navbar = () => {
             REWARDS
           </NavLink>
           <NavLink
-            to="giftcard"
+            to="giftcards"
             className="font-bold hidden md:block decoration-green-600 underline-offset-[15px] decoration-3"
           >
             GIFT CARDS
@@ -72,7 +72,7 @@ const Navbar = () => {
         <Link onClick={() => setToggle(false)} to="rewards">
           Rewards
         </Link>
-        <Link onClick={() => setToggle(false)} to="giftcard">
+        <Link onClick={() => setToggle(false)} to="giftcards">
           Gift Cards
         </Link>
         <span className="w-full border-[1px] border-gray-400"></span>

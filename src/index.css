@@ -2,3 +2,6 @@
 .active {
   @apply underline;
 }
+::-webkit-scrollbar{
+  @apply hidden
+}
