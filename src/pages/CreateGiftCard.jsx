@@ -23,11 +23,14 @@ const CreateGiftCard = () => {
     setCount(message.length);
   }, [message]);
   console.log("WordCount: ", count);
-  const { id } = useParams();
+  const { title, id } = useParams();
+  const originTitle = title.toUpperCase();
   let found = false;
   let display = null;
   for (const card of cards) {
-    found = card.items.some((c) => c.id == id);
+    if (card.title == originTitle) {
+      found = card.items.some((c) => c.id == id);
+    }
     if (found) {
       display = card.items.find((i) => i.id == id);
       break;

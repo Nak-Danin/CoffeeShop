@@ -58,7 +58,13 @@ const Template = ({ id, title, items }) => {
           className="w-full h-[120px] md:h-[180px] lg:h-[200px] py-1 lg:py-3 overflow-x-auto flex gap-4 lg:gap-8 px-[3%] md:px-[6%]"
         >
           {items.map(({ id, imgsrc }) => (
-            <Card key={id} id={id} imgsrc={imgsrc} cardRef={cardRef} />
+            <Card
+              key={id}
+              id={id}
+              imgsrc={imgsrc}
+              title={title}
+              cardRef={cardRef}
+            />
           ))}
         </div>
         {/* Prev Button */}

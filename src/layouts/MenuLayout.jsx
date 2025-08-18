@@ -15,13 +15,13 @@ const MenuLayout = () => {
         <NavLink to="/menu" className={`underline-offset-5 decoration-1`}>
           Menu
         </NavLink>
-        <NavLink to="/feature" className={`underline-offset-5 decoration-1`}>
+        <NavLink to="/featured" className={`underline-offset-5 decoration-1`}>
           Featured
         </NavLink>
-        <NavLink to="previous" className={`underline-offset-5 decoration-1`}>
+        <NavLink to="/previous" className={`underline-offset-5 decoration-1`}>
           Previous
         </NavLink>
-        <NavLink to="favorites" className={`underline-offset-5 decoration-1`}>
+        <NavLink to="/favorites" className={`underline-offset-5 decoration-1`}>
           Favorites
         </NavLink>
       </nav>

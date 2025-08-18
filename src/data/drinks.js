@@ -37,7 +37,7 @@ export const banners = [
     btn: "Join now",
     bg: "bg-[#D1D1AA]",
     textColor: "text-[#32462F]",
-    path:"rewards"
+    path: "rewards",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const banners = [
     btn: "Learn more",
     bg: "bg-[#006242]",
     textColor: "text-white",
-    path: "featured"
+    path: "/",
   },
 ];
 
@@ -274,6 +274,6 @@ export const promo = [
     detail2:
       "From July 14–20, submit your favorite customization for a chance to get it featured on the secret menu and win a $25,000 grand prize.**",
     btn2: "Learn More",
-    path2: "gift cards",
+    path2: "giftcards",
   },
 ];

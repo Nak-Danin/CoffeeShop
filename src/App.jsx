@@ -9,6 +9,8 @@ import {
   Reward,
   GiftCards,
   CreateGiftCard,
+  Previous,
+  Favorites,
 } from "./pages";
 const router = createBrowserRouter([
   {
@@ -35,8 +37,16 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "feature",
+        path: "featured",
         element: <Feature />,
+      },
+      {
+        path: "previous",
+        element: <Previous/>
+      },
+      {
+        path: "favorites",
+        element: <Favorites/>
       },
       {
         path: "menu/product/:id",
@@ -51,7 +61,7 @@ const router = createBrowserRouter([
         element: <GiftCards />,
       },
       {
-        path: "giftcards/:id",
+        path: "giftcards/:title/:id",
         element: <CreateGiftCard />,
       },
     ],
