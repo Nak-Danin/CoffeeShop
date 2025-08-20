@@ -11,12 +11,12 @@ import {
   CreateGiftCard,
   Previous,
   Favorites,
+  Error,
 } from "./pages";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
-    errorElement: <h1>Error Element</h1>,
     children: [
       {
         index: true,
@@ -42,11 +42,11 @@ const router = createBrowserRouter([
       },
       {
         path: "previous",
-        element: <Previous/>
+        element: <Previous />,
       },
       {
         path: "favorites",
-        element: <Favorites/>
+        element: <Favorites />,
       },
       {
         path: "menu/product/:id",
@@ -63,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "giftcards/:title/:id",
         element: <CreateGiftCard />,
+      },
+      {
+        path: "*",
+        element: <Error />,
       },
     ],
   },
