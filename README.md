@@ -21,8 +21,8 @@ This project showcases modern UI, routing, and dynamic product pages that displa
 ---
 
 ## 🔗 Links
-- [GitHub Repository](https://github.com/your-username/starbucks-clone)  
-- [Portfolio](https://your-portfolio-link.com)  
+- [GitHub](https://github.com/Nak-Danin)  
+- [Portfolio](https://coffee-shop-kappa-brown.vercel.app/)  
 
 ---
 
